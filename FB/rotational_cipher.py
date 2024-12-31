@@ -30,3 +30,21 @@ if __name__ == "__main__":
   rotation_factor = 4
   output = rotationalCipher(input, rotation_factor)
   print(output)
+
+
+#------------------Alternate approach------------------
+
+def rotate(s, k):
+    output = []
+    for item in s:
+        if item.isalpha():
+            offset = ord('A') if item.isupper() else ord('a')
+            newChar = chr(offset + (ord(item) -offset  + k) % 26)
+            output.append(newChar)
+        elif item.isnumeric():
+            output.append(str((int(item) + k) % 10))
+        else:
+            output.append(c)
+    return ''.join(output)
+    
+print(rotate("Bcd1",100))
