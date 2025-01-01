@@ -32,3 +32,22 @@ def generate_floyds_triangle(n):
         print(i)
     return output
         
+#---------------------Alternate approach---------------------
+
+def generate_floyds_triangle(n):
+    output = []
+    item = 1
+    for i in range(n):
+        row = i + 1
+        row_text = ''
+        for j in range(row):
+            row_text += ' ' + str(item)
+            item += 1
+        output.append(row_text)
+    
+    for k in output:
+        print(k)
+        
+     
+
+generate_floyds_triangle(5)
