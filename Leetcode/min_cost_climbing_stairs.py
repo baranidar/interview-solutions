@@ -1,3 +1,5 @@
+#https://leetcode.com/problems/min-cost-climbing-stairs/
+
 def minCostClimbingStairs(self, cost: List[int]) -> int:
     index_to_change = -2
     cost[index_to_change] = min(cost[index_to_change], cost[index_to_change] + cost[index_to_change+1])

@@ -1,4 +1,7 @@
-def hasCycle(self, head: Optional[ListNode]) -> bool:
+
+# slow fast two pointer approach
+# https://leetcode.com/problems/middle-of-the-linked-list/
+def hasCycle(head) -> bool:
     slow = head
     fast = head
     while fast and fast.next:

@@ -24,6 +24,17 @@ def fibonacci_recursive(n, lst = []):
     lst.append(lst[-1]+lst[-2])
     return fibonacci_recursive(n-1, lst)
 
+
+def fib_rec(n):
+    if n <= 0:
+        return n
+    a = fib_rec(n-1)
+    b = fib_rec(n-2)
+
+    return a + b
+
 fibonacci(5)
 output = fibonacci_recursive(5)
+print(output)
+output = fib_rec(5)
 print(output)
