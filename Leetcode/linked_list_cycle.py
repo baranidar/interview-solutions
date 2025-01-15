@@ -1,6 +1,6 @@
 
 # slow fast two pointer approach
-# https://leetcode.com/problems/middle-of-the-linked-list/
+# https://leetcode.com/problems/linked-list-cycle/
 def hasCycle(head) -> bool:
     slow = head
     fast = head
