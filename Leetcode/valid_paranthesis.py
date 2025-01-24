@@ -1,3 +1,4 @@
+ #https://leetcode.com/problems/valid-parentheses/  
     def isValid(self, s: str) -> bool:
         from collections import deque
         stack = deque()
